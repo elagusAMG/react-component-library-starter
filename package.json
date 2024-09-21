@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/test-ui.es.js",
+      "require": "./dist/test-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "tsc -b && vite build",
@@ -10,7 +20,7 @@
     "preview": "vite preview",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

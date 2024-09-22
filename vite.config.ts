@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
@@ -39,5 +40,13 @@ export default defineConfig({
         },
       },
     },
+  },
+  test: {
+    environment: 'jsdom',
+    include: ['lib/**/*.test.tsx', 'lib/**/*.test.ts'],
+    coverage: {
+      include: ['lib/**/*.test.tsx', 'lib/**/*.test.ts'],
+      exclude: ['node_modules/', 'dist/'],
+    }
   },
 });

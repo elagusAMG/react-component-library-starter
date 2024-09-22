@@ -12,9 +12,12 @@ dist
 dist-ssr
 *.local
 
-## TS Build
+# TS Build
 tsconfig.app.tsbuildinfo
 tsconfig.node.tsbuildinfo
+
+# Vitest
+coverage/
 
 # Storybook
 .cache/

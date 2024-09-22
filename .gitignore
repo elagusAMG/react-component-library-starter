@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+## TS Build
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
+
 # Storybook
 .cache/
 

@@ -1,7 +1,7 @@
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-import react from '@vitejs/plugin-react';
 
 import { peerDependencies } from './package.json';
 
@@ -18,16 +18,16 @@ export default defineConfig({
         {
           src: './tailwind-preset/index.js', // Path to your preset file
           dest: './tailwind-base', // Destination folder inside dist/
-          rename: 'index.js'
-        }
-      ]
+          rename: 'index.js',
+        },
+      ],
     }),
   ],
   build: {
     lib: {
       entry: './lib/index.ts',
       name: 'test-ui',
-      fileName: format => `test-ui.${format}.js`,
+      fileName: (format) => `test-ui.${format}.js`,
       formats: ['es', 'cjs', 'umd'],
     },
     rollupOptions: {

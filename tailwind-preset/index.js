@@ -1,7 +1,7 @@
-
 module.exports = {
   theme: {
     colors: {
+      white: '#fff',
       blue: {
         light: '#85d7ff',
         DEFAULT: '#1fb6ff',
@@ -18,7 +18,7 @@ module.exports = {
         DEFAULT: '#c0ccda',
         light: '#e0e6ed',
         lightest: '#f9fafc',
-      }
+      },
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -35,6 +35,6 @@ module.exports = {
         90: '90',
         100: '100',
       },
-    }
-  }
-}
+    },
+  },
+};

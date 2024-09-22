@@ -9,7 +9,7 @@ This is a starter template for creating React component libraries using Vite. It
 - Tailwind: A utility-first CSS framework.
 - Storybook: A frontend workshop for building UI components and pages in isolation.
 - Vite: A next generation frontend tooling that runs and builds your library incredibly fast.
-- Vitest: A next generation testing framework. :warning: WIP :warning:
+- Vitest: A next generation testing framework.
 - BiomeJS: A tool that finds and fixes problems in your code + code formatter
 - Husky: A pre-commit hook. :warning: WIP :warning:
 - Github Action: A tool that deploys your Storybook to GitHub page automatically. :warning: WIP :warning:
@@ -21,15 +21,15 @@ This is a starter template for creating React component libraries using Vite. It
 
 ## Scripts :warning: WIP :warning:
 
-- `dev`: Starts the local Storybook server, use this to develop and preview your components.
-- `test`: Runs all your tests with vitest.
-- `test:watch`: Runs tests in watch mode.
-- `test:ui`: Runs tests with a UI.
-- `test:coverage`: Runs tests and generates a coverage report.
-- `build`: Builds your Storybook as a static web application.
-- `build:lib`: Builds your component library with Vite.
-- `lint`: Runs ESLint.
-- `format`: Formats your code with Prettier.
+- `storybook`: Starts the local Storybook server, use this to develop and preview your components.
+- `storybook:css`: Generates the index.css file for storybook.
+- `build`: Generates the `dist/` folder to be uploaded to npm.
+- `build:css`: Generates the index.css in the `dist/` folder.
+- `build-storybook`: Builds the storybook.
+- `build-storybook:css`: Builds the css file for the storybook.
+- `lint`: Runs Biomejs.
+- `test`: Runs component tests.
+- `test:coverage`: Runs component tests and generates a coverage report.
 
 ## License
 

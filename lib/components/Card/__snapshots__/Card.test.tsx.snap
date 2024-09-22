@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card > should match snapshot 1`] = `
+<div>
+  <div
+    class="ui"
+  >
+    <div
+      class="ui-bg-white ui-rounded-lg ui-shadow-lg ui-overflow-hidden sm:max-w-xs lg:max-w-sm xl:max-w-md"
+    >
+      <div
+        class="ui-px-6 ui-py-4"
+      >
+        <h2
+          class="ui-font-sans ui-font-bold ui-text-xl ui-mb-2 ui-text-pink"
+        >
+          Card Title
+        </h2>
+        <p
+          class="ui-bg-white ui-border-none ui-rounded-none ui-font-sans ui-text-gray-dark ui-text-base"
+        >
+          This is a card
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

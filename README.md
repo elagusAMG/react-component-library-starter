@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# React Component Library Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a starter template for creating React component libraries using Vite. It includes a robust set of features to help you develop, test, and build your library efficiently.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React: A JavaScript library for web and native user interfaces.
+- TypeScript: A strongly typed superset of JavaScript.
+- Tailwind: A utility-first CSS framework.
+- Storybook: A frontend workshop for building UI components and pages in isolation.
+- Vite: A next generation frontend tooling that runs and builds your library incredibly fast.
+- Vitest: A next generation testing framework. :warning: WIP :warning:
+- BiomeJS: A tool that finds and fixes problems in your code + code formatter
+- Husky: A pre-commit hook. :warning: WIP :warning:
+- Github Action: A tool that deploys your Storybook to GitHub page automatically. :warning: WIP :warning:
 
-## Expanding the ESLint configuration
+## Get Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository
+2. Install dependencies using `npm i` (or `pnpm i` if you like)
 
-- Configure the top-level `parserOptions` property like this:
+## Scripts :warning: WIP :warning:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- `dev`: Starts the local Storybook server, use this to develop and preview your components.
+- `test`: Runs all your tests with vitest.
+- `test:watch`: Runs tests in watch mode.
+- `test:ui`: Runs tests with a UI.
+- `test:coverage`: Runs tests and generates a coverage report.
+- `build`: Builds your Storybook as a static web application.
+- `build:lib`: Builds your component library with Vite.
+- `lint`: Runs ESLint.
+- `format`: Formats your code with Prettier.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## License
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+MIT
